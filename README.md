@@ -1,52 +1,77 @@
-# 💰 Finance Dashboard Backend
+```md
+# 💰 Finance Dashboard (Full Stack)
 
-A backend system for a Finance Dashboard Application that manages financial records, user roles, and access control. This project demonstrates backend architecture, API design, data modeling, and role-based authorization.
+A full-stack Finance Dashboard application that allows users to manage financial records, view analytics, and access data based on role-based permissions.
+
+This project is built to demonstrate backend architecture, API design, access control, and frontend integration.
 
 ---
 
 ## 🚀 Objective
 
 This project showcases:
-- API design and structure
-- Role-based access control
-- Financial data processing
-- Dashboard analytics
-- Clean and maintainable backend architecture
+
+- Backend API design and structure  
+- Role-based access control  
+- Financial data management  
+- Dashboard analytics  
+- Frontend integration with backend  
+- Clean and scalable architecture  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Backend: Node.js, Express.js  
-- Database: MongoDB  
-- Authentication: JWT (if implemented)  
-- Tools: Postman  
+### Frontend
+- React.js  
+- Tailwind CSS  
+
+### Backend
+- Node.js  
+- Express.js  
+
+### Database
+- MongoDB  
+
+### Tools
+- Postman  
+- Git & GitHub  
 
 ---
 
 ## 📁 Project Structure
 
-finance-dashboard-backend/
-│── controllers/
-│── models/
-│── routes/
-│── middleware/
-│── config/
-│── utils/
-│── server.js
-│── package.json
+```
+
+finance-dashboard/
+│── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── App.js
+│
+│── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── config/
+│   └── server.js
+│
 │── README.md
+
+```
 
 ---
 
 ## 👥 User Roles & Permissions
 
 Viewer
-- Can view dashboard data  
-- Cannot modify records  
+- Can view dashboard  
+- Cannot modify data  
 
 Analyst
-- Can view financial records  
+- Can view records  
 - Can access analytics  
 
 Admin
@@ -55,9 +80,17 @@ Admin
 
 ---
 
+## 🔐 Authentication
+
+- User signup and login implemented  
+- Authentication can be extended using JWT  
+
+---
+
 ## 📊 Financial Records
 
-Fields:
+Each record contains:
+
 - Amount  
 - Type (Income / Expense)  
 - Category  
@@ -68,31 +101,43 @@ Fields:
 
 ## 📡 API Endpoints
 
-Authentication (Optional)
+Authentication  
 POST /api/auth/register  
 POST /api/auth/login  
 
-Users
+Users  
 GET /api/users  
 POST /api/users  
 PATCH /api/users/:id  
 
-Financial Records
+Records  
 POST /api/records  
 GET /api/records  
 PUT /api/records/:id  
 DELETE /api/records/:id  
 
-Dashboard
+Dashboard  
 GET /api/dashboard/summary  
+
+---
+
+## 📈 Dashboard Features
+
+- Total Income  
+- Total Expenses  
+- Net Balance  
+- Transaction listing  
+- Future support for charts  
 
 ---
 
 ## 🔐 Access Control
 
-Viewer → Read only  
-Analyst → Read + analytics  
-Admin → Full CRUD access  
+Role-based access control is enforced:
+
+- Viewer → Read-only  
+- Analyst → Read + analytics  
+- Admin → Full CRUD  
 
 ---
 
@@ -112,19 +157,49 @@ MongoDB is used for storing users and financial records.
 
 ## ⚙️ Installation & Setup
 
-git clone https://github.com/Pranavi125/finance-dashboard.git  
-cd finance-dashboard  
-npm install  
-npm start  
+### Clone Repository
+```
+
+git clone [https://github.com/Pranavi125/finance-dashboard.git](https://github.com/Pranavi125/finance-dashboard.git)
+cd finance-dashboard
+
+```
+
+### Backend Setup
+```
+
+cd backend
+npm install
+npm start
+
+```
+
+### Frontend Setup
+```
+
+cd frontend
+npm install
+npm run dev
+
+```
 
 ---
 
-## 🎯 Optional Enhancements
+## 🎯 Features Implemented
+
+- User signup UI  
+- Dashboard UI with financial summary  
+- Record creation and listing  
+- Clean UI with responsive design  
+
+---
+
+## 🚧 Future Enhancements
 
 - JWT Authentication  
-- Pagination  
-- Search  
-- Soft delete  
+- Charts and analytics  
+- Pagination and search  
+- Role-based UI rendering  
 - API documentation  
 
 ---
@@ -138,4 +213,5 @@ GitHub: https://github.com/Pranavi125
 
 ## 📜 License
 
-This project is for educational purposes.
+This project is for educational and assessment purposes.
+```
