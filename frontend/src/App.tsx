@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Records from "./pages/Records";
 import Layout from "./components/Layout";
+import Signup from "./pages/Signup";
+
 
 export default function App() {
   return (
@@ -13,7 +15,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/login" replace />} />
           <Route path="/login" element={<Login />} />
-
+          
+<Route path="/signup" element={<Signup />} />
           <Route element={<Layout />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/records" element={<Records />} />
