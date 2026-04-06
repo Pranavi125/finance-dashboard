@@ -3,7 +3,7 @@
 
 A full-stack Finance Dashboard application that allows users to manage financial records, view analytics, and access data based on role-based permissions.
 
-This project is built to demonstrate backend architecture, API design, access control, and frontend integration.
+This project demonstrates backend architecture, API design, access control, and frontend integration.
 
 ---
 
@@ -66,15 +66,15 @@ finance-dashboard/
 
 ## 👥 User Roles & Permissions
 
-Viewer
+### Viewer
 - Can view dashboard  
 - Cannot modify data  
 
-Analyst
+### Analyst
 - Can view records  
 - Can access analytics  
 
-Admin
+### Admin
 - Full access  
 - Can manage users and records  
 
@@ -101,22 +101,22 @@ Each record contains:
 
 ## 📡 API Endpoints
 
-Authentication  
+### Authentication
 POST /api/auth/register  
 POST /api/auth/login  
 
-Users  
+### Users
 GET /api/users  
 POST /api/users  
 PATCH /api/users/:id  
 
-Records  
+### Records
 POST /api/records  
 GET /api/records  
 PUT /api/records/:id  
 DELETE /api/records/:id  
 
-Dashboard  
+### Dashboard
 GET /api/dashboard/summary  
 
 ---
